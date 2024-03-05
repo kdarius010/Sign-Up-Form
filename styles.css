@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100vh;
+}
+
+img {
+    width: 50vh;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 35%;
+    padding-left: 5%;
+    background-color: rgb(233, 233, 240);
+}
+
+.action {
+    width: 100%;
+    height: 30%;
+    padding-left: 5%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    gap: 50px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 15px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    background-color: rgb(170, 85, 231);
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+span {
+    color: rgb(170, 85, 231);;
+}
+ p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ }
