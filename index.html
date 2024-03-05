@@ -12,47 +12,47 @@
         <img src="https://rb.gy/8m1doy">
     </div>
     <div id="main">
-        <div class="content top">
-            <p>
+        <div class="content">
+            <p class="top">
                 This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
                 Sign up now to get started.
             </p>
             <p>
-                You know you want to.
+                You <span>know</span> you want to.
             </p>
         </div>
         <div class="action">
             <p> Let's do this!</p>
             <p>
-                <form>
+                <form action="/here" method="post">
                     <div>
                         <label for="first_name">First Name</label>
-                        <input type="text">
+                        <input type="text" id="first_name" name="first_name" autofocus>
 
-                        <label for="last_name">Last Name</label>
-                        <input type="text">
+                        <label for="email">*Email</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
 
-                        <label for="email">Email</label>
-                        <input type="email">
+                        <label for="password">*Password</label>
+                        <input type="password" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*\d).{7,}$" required>
                     </div>
                     <div>
-                        <label for="phone_number">Phone Number</label>
-                        <input type="number">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name">
 
-                        <label for="password">Password</label>
-                        <input type="password">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number" placeholder="(123)456-7890">
 
                         <label for="confirm_password">Confirm Password</label>
-                        <input type="password">
+                        <input type="password" id="confirm_password" name="confirm_password" required>
                     </div>
                 </form>
             </p>
         </div>
         <div class="content">
-            <button>Create An Account</button>
+            <button type="submit">Create An Account</button>
             <p>
-                Already have an account? <span>Log In</span>
+                Already have an account? <span class="login">Log In</span>
             </p>
         </div>
 

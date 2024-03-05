@@ -50,6 +50,7 @@ input {
     box-sizing: border-box;
     border-radius: 5px;
     height: 15px;
+    outline: none;
 }
 
 button {
@@ -61,9 +62,26 @@ button {
     font-weight: bolder;
 }
 
-span {
+.login {
     color: rgb(170, 85, 231);;
+}
+
+span {
+    font-style: italic;
 }
  p {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
  }
+
+.top {
+    padding-top: 20%;
+    padding-right: 22%;
+}
+:focus {
+    border-color: rgb(111, 208, 244);
+    box-shadow: 1px -1px -10px;
+}
+
+:invalid {
+    border-color: red;
+}
