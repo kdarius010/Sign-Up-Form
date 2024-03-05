@@ -26,41 +26,49 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-form {
-    display: flex;
-    gap: 50px;
-}
-
 #main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-label {
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 70px;
+  }
+  
+  
+  
+  label {
     display: block;
     margin-bottom: 3px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-input {
-    width: 100%;
+  }
+  
+  input {
     padding: 10px;
     margin-bottom: 5px;
     box-sizing: border-box;
     border-radius: 5px;
     height: 15px;
     outline: none;
-}
-
-button {
+  }
+  
+  button {
     margin-top: 30px;
     padding: 15px 40px;
     border-radius: 10px;
     background-color: rgb(170, 85, 231);
     color: aliceblue;
     font-weight: bolder;
-}
+  }
+  
 
 .login {
     color: rgb(170, 85, 231);;
@@ -84,4 +92,19 @@ span {
 
 :invalid {
     border-color: red;
+}
+
+#message {
+    padding-top: 21%;
+    margin-left: -40px;
+}
+
+
+#registrationForm {
+    display: block;
+}
+
+#messageContainer {
+    padding-left: 420px;
+    margin-top: -35px;
 }
